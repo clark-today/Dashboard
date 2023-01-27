@@ -18,7 +18,6 @@ export const dashboardNamespaces = [
   'settings/customization/shade-selector',
   'settings/customization/app-width',
   'settings/customization/opacity-selector',
-  'modules/common',
   'modules/date',
   'modules/calendar',
   'modules/dlspeed',

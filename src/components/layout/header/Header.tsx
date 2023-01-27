@@ -37,7 +37,7 @@ export function Header(props: any) {
         </Box>
         <Group position="right" style={{ maxWidth: 'none' }} noWrap>
           <Search />
-          <ToggleEditModeAction />
+          {(!config?.configProperties.public || config.authed) && <ToggleEditModeAction />}
           <DockerMenuButton />
           <Indicator size={15} color="blue" withBorder processing disabled={!newVersionAvailable}>
             <SettingsMenu newVersionAvailable={newVersionAvailable} />

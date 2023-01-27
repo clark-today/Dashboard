@@ -39,6 +39,8 @@ export async function getServerSideProps({
   }
 
   const config = getFrontendConfig(configName as string);
+  // TODO: Check authed state
+  config.authed = true;
   setCookie('config-name', configName, {
     req,
     res,

@@ -20,4 +20,5 @@ export type BackendConfigType = Omit<ConfigType, 'apps'> & {
 
 export interface ConfigPropertiesType {
   name: string;
+  public: boolean;
 }
