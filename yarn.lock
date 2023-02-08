@@ -1993,6 +1993,52 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@trpc/client@npm:^10.10.0":
+  version: 10.10.0
+  resolution: "@trpc/client@npm:10.10.0"
+  peerDependencies:
+    "@trpc/server": 10.10.0
+  checksum: 62d467ff54160bfbbef2d9a4815557a60b4ed3026190399340a7eb479adba4f757b93b7a74823fbe6006afe66e78a5a8a407603a968ed0404d345613c2d15e11
+  languageName: node
+  linkType: hard
+
+"@trpc/next@npm:^10.10.0":
+  version: 10.10.0
+  resolution: "@trpc/next@npm:10.10.0"
+  dependencies:
+    react-ssr-prepass: ^1.5.0
+  peerDependencies:
+    "@tanstack/react-query": ^4.3.8
+    "@trpc/client": 10.10.0
+    "@trpc/react-query": ^10.8.0
+    "@trpc/server": 10.10.0
+    next: "*"
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: 06b5c1832c12a4b478134e22cac4f4821b3906e00c08301c50e86eddbc89d1e4469a4e6d13dfde893429477973710cb5b803a0f4d1f392ae8a1cc9da3feb721d
+  languageName: node
+  linkType: hard
+
+"@trpc/react-query@npm:^10.10.0":
+  version: 10.10.0
+  resolution: "@trpc/react-query@npm:10.10.0"
+  peerDependencies:
+    "@tanstack/react-query": ^4.3.8
+    "@trpc/client": 10.10.0
+    "@trpc/server": 10.10.0
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: 7e26bcc33f6aa97986fbfcbcdf0a4864eba79beda33d9c98bd2293c48ff3d9195977716dd1bc4b4d93988e59791ee7291581924d7d98e34104b03e90826d6e2a
+  languageName: node
+  linkType: hard
+
+"@trpc/server@npm:^10.10.0":
+  version: 10.10.0
+  resolution: "@trpc/server@npm:10.10.0"
+  checksum: a50724416886d6ec406c87e03086baa4abb2509ea87984a96f1a1a891a67ffd2e13fdfcde9bc490ca2bb41083d7beb5d59d889446b3341af887d1d6281b5fe41
+  languageName: node
+  linkType: hard
+
 "@types/babel__core@npm:^7.1.14":
   version: 7.20.0
   resolution: "@types/babel__core@npm:7.20.0"
@@ -5369,6 +5415,10 @@ __metadata:
     "@tabler/icons": ^1.106.0
     "@tanstack/react-query": ^4.2.1
     "@tanstack/react-query-devtools": ^4.24.4
+    "@trpc/client": ^10.10.0
+    "@trpc/next": ^10.10.0
+    "@trpc/react-query": ^10.10.0
+    "@trpc/server": ^10.10.0
     "@types/dockerode": ^3.3.9
     "@types/node": 17.0.1
     "@types/ping": ^0.4.1
@@ -7968,6 +8018,15 @@ __metadata:
   version: 2.0.0
   resolution: "react-property@npm:2.0.0"
   checksum: 8a444df30ef0937689c7968dae2501a0ca523777169f450e1f7ef5beeb855d6509bd058bf612f6ed8f459aa35468335d356e50264492e1938586e59fdb988262
+  languageName: node
+  linkType: hard
+
+"react-ssr-prepass@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "react-ssr-prepass@npm:1.5.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: efe89b9f8b2053474613f56dfdbeb41d8ee2e572bf819a39377d95d3e4a9acf8a4a16e28d8d8034cb9ac2b316d11dc9e62217743e4322046d08175eb3b4fed3e
   languageName: node
   linkType: hard
 
