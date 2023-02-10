@@ -29,6 +29,8 @@ import { usePackageAttributesStore } from '../tools/client/zustands/usePackageAt
 
 import '../styles/global.scss';
 import '@uiw/react-textarea-code-editor/dist.css';
+import { withTRPC } from '@trpc/next';
+import { trpc } from '../tools/tRPC';
 
 function App(
   this: any,
@@ -130,4 +132,7 @@ App.getInitialProps = ({ ctx }: { ctx: GetServerSidePropsContext }) => ({
   packageAttributes: getServiceSidePackageAttributes(),
 });
 
-export default appWithTranslation(App);
+const withTranslations = appWithTranslation(App);
+const withTrpc = trpc.withTRPC(withTranslations);
+
+export default (withTrpc);

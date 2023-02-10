@@ -11,6 +11,7 @@ import React from 'react';
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
+import { trpc } from '../tools/tRPC';
 
 const useStyles = createStyles((theme) => ({
   root: {

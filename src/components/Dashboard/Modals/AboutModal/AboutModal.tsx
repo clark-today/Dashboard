@@ -34,6 +34,7 @@ import { useConfigStore } from '../../../../config/store';
 import { usePackageAttributesStore } from '../../../../tools/client/zustands/usePackageAttributesStore';
 import { usePrimaryGradient } from '../../../layout/useGradient';
 import Credits from '../../../Settings/Common/Credits';
+import packageJson from '../../../../../package.json';
 
 interface AboutModalProps {
   opened: boolean;
@@ -211,7 +212,7 @@ const useInformationTableItems = (newVersionAvailable?: string): InformationTabl
       content: (
         <Group position="right">
           <Badge variant="gradient" gradient={colorGradiant}>
-            {attributes.packageVersion ?? 'Unknown'}
+            {packageJson.version ?? 'Unknown'}
           </Badge>
           {newVersionAvailable && (
             <HoverCard shadow="md" position="top" withArrow>
@@ -251,7 +252,7 @@ const useInformationTableItems = (newVersionAvailable?: string): InformationTabl
       label: 'nodeEnvironment',
       content: (
         <Badge variant="gradient" gradient={colorGradiant}>
-          {attributes.environment}
+          {process.env.NODE_ENV}
         </Badge>
       ),
     },
