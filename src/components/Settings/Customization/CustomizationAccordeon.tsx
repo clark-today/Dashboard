@@ -105,6 +105,15 @@ const getItems = () => {
               <Grid.Col sm={12} md={6}>
                 <ShadeSelector />
               </Grid.Col>
+              <Grid.Col sm={12} md={6}>
+                <Checkbox
+                  label="Hide name of apps"
+                  description="This will hide the name of the apps that are smaller than 2x2"
+                  onChange={(e) => {
+                    localStorage.setItem('hideAppNames', e.target.checked ? 'true' : 'false');
+                  }}
+                />
+              </Grid.Col>
             </Grid>
           </Stack>
 
