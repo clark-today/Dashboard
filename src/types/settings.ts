@@ -35,6 +35,7 @@ interface BaseSearchEngineType {
 }
 
 export interface CustomizationSettingsType {
+  hideSmallTitles: boolean;
   layout: LayoutCustomizationSettingsType;
   pageTitle?: string;
   metaTitle?: string;

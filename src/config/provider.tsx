@@ -5,7 +5,7 @@ import { ConfigType } from '../types/config';
 import { useConfigStore } from './store';
 
 export type ConfigContextType = {
-  config: ConfigType | undefined;
+  config: ConfigType;
   name: string | undefined;
   configVersion: number | undefined;
   increaseVersion: () => void;
@@ -14,7 +14,7 @@ export type ConfigContextType = {
 
 const ConfigContext = createContext<ConfigContextType>({
   name: 'unknown',
-  config: undefined,
+  config: {} as ConfigType,
   configVersion: undefined,
   increaseVersion: () => console.error('Provider not set'),
   setConfigName: () => console.error('Provider not set'),

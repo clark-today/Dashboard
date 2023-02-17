@@ -15,7 +15,11 @@
     },
     "appereance": {
       "name": "Appereance",
-      "description": "Customize the background, colors and apps appereance"
+      "description": "Customize the background, colors and apps appereance",
+      "titleCheckbox": {
+        "label": "Show small titles",
+        "description": "Show or hide the title of apps that are under 2x1 in size"
+      }
     }
   }
 }

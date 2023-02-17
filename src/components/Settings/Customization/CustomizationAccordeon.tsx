@@ -1,8 +1,9 @@
-import { Accordion, Checkbox, Grid, Group, Stack, Switch, Text } from '@mantine/core';
+import { Accordion, Button, Checkbox, Grid, Group, Stack, Text } from '@mantine/core';
 import { IconBrush, IconChartCandle, IconCode, IconDragDrop, IconLayout } from '@tabler/icons';
 import { i18n, useTranslation } from 'next-i18next';
 import { ReactNode } from 'react';
 import { GridstackConfiguration } from './Layout/GridstackConfiguration';
+import { HideSmallTitlesCheckbox } from './Layout/HideSmallTitles';
 import { LayoutSelector } from './Layout/LayoutSelector';
 import { BackgroundChanger } from './Meta/BackgroundChanger';
 import { FaviconChanger } from './Meta/FaviconChanger';
@@ -105,6 +106,9 @@ const getItems = () => {
               <Grid.Col sm={12} md={6}>
                 <ShadeSelector />
               </Grid.Col>
+              <Grid.Col sm={12} md={6}>
+                <HideSmallTitlesCheckbox />
+              </Grid.Col>
             </Grid>
           </Stack>
 
@@ -131,6 +135,7 @@ const getItems = () => {
               i18n?.changeLanguage(e.target.checked ? 'cimode' : 'en')
             }
           />
+          <Button onClick={() => i18n?.reloadResources()}>Reload translations</Button>
         </Stack>
       ),
     });
