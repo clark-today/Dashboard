@@ -3,7 +3,7 @@
 <picture id="banner">
 <img src="./docs/banner.png" />
 </picture>
-
+ 
 <!-- Badges -->
 <p align="center">
 <img src="https://img.shields.io/github/stars/ajnart/homarr?label=%E2%AD%90%20Stars&style=flat-square?branch=master&kill_cache=1%22">
